@@ -5,47 +5,258 @@
        <meta charset="utf-8">
        <meta http-equiv="X-UA-Compatible" content="IE=edge">
        <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link rel="stylesheet" href="./style_exemplo.css">
+       <link rel="stylesheet" href="./style.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
    </head>
 
    <body>
-       <h1 style="color: red; font-size: 40px;" > Hello, World! </h1>
 
-       <div class="card-esquerda" > <u>Esse é</u> &nbsp; <b>meu primeiro</b> </div>
-       <div class="card-direita" > website &nbsp;<i>com HTML5</i> </div>
-       <br>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
 
-       <div class="links">
-            <ul> 
-                <li> <a href="https://github.com/vmribeiro"> github victor </a> </li> 
-                <li> <a href="https://www.delftstack.com/howto/css/css-vertical-align-text/#:~:text=text%20in%20CSS.-,Use%20the%20line%2Dheight%20Property%20to%20Align%20Text%20Vertically%20in,distance%20between%20lines%20of%20text."> github victor </a> </li> 
-            </ul>
-            <button class="botao"> Clique aqui </button>
-       </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm ">
+                </div>
+                <div class="col-sm">
+                    <h1> Lorem Ipsum </h1>
+                    <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                </div>
+                <div class="col-sm">
+                </div>
+            </div>
+        </div>
+        <br>
 
-       <br>
-       <br>
 
-       <table>
-        <th>
-            <td>
-                Tipo do carro
-            </td>
-            <td>
-                Valor
-            </td>
-        </th> 
-        <tr>
-            <td> </td>
-            <td> Corolla </td>
-            <td> 1250000 </td>
-        </tr>
-        <tr>
-            <td> </td>
-            <td> Honda Civic </td>
-            <td> 1250000 </td>
-        </tr>
-       </table>
+        <div class="text-center image-treated">
+            <img src="data:image/jpeg;base64,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" class="rounded" width="800px" height="auto">
+        </div>
+        
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-facebook-f"></i
+                ></a>
+        
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-twitter"></i
+                ></a>
+        
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-google"></i
+                ></a>
+        
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-instagram"></i
+                ></a>
+        
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-linkedin-in"></i
+                ></a>
+        
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-github"></i
+                ></a>
+            </section>
+            <!-- Section: Social media -->
+        
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center">
+                    <!--Grid column-->
+                    <div class="col-auto">
+                    <p class="pt-2">
+                        <strong>Sign up for our newsletter</strong>
+                    </p>
+                    </div>
+                    <!--Grid column-->
+        
+                    <!--Grid column-->
+                    <div class="col-md-5 col-12">
+                    <!-- Email input -->
+                    <div class="form-outline form-white mb-4">
+                        <input type="email" id="form5Example21" class="form-control" />
+                        <label class="form-label" for="form5Example21">Email address</label>
+                    </div>
+                    </div>
+                    <!--Grid column-->
+        
+                    <!--Grid column-->
+                    <div class="col-auto">
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-outline-light mb-4">
+                        Subscribe
+                    </button>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+        
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                eum harum corrupti dicta, aliquam sequi voluptate quas.
+                </p>
+            </section>
+            <!-- Section: Text -->
+        
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+        
+                    <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 4</a>
+                    </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+        
+                    <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 4</a>
+                    </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+        
+                    <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 4</a>
+                    </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+        
+                    <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 4</a>
+                    </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
+        
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
    </body>
 
 </html>
